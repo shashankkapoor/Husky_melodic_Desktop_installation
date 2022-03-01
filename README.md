@@ -1,4 +1,5 @@
 # Husky_melodic_Desktop_installation
+Hi All, 
 
 ## installing ROS melodic 
 
@@ -13,15 +14,23 @@ source ~/.bashrc
 source /opt/ros/melodic/setup.bash
 ```
 
-#Dependencies for building packages
+## Dependencies for building packages
+
+```
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
+## python releated dependencies
+```
 sudo apt install python-rosdep
 sudo rosdep init
 rosdep update
+```
 
-#installing Gazebo and rviz simulation
+## installing Gazebo and rviz simulation
+```
 sudo apt-get install ros-melodic-husky-simulator
 sudo apt-get install ros-melodic-husky-desktop
+```
 
 # application opens in different terminals.
 
