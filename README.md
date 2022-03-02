@@ -32,39 +32,48 @@ sudo apt-get install ros-melodic-husky-simulator
 sudo apt-get install ros-melodic-husky-desktop
 ```
 
-# application opens in different terminals.
+# Application opens in different terminals.
 
-#installing Velodyne Lidar package,driver 
+## installing Velodyne Lidar package,driver 
+
+```
 sudo apt-get install ros-melodic-velodyne
 mkdir -p ~/velodyne_ws/src && git clone https://github.com/ros-drivers/velodyne.git
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 cd ~/velodyne_ws/ && catkin_make
+```
 
-#installing VeloView for lidar (usually for see data nothing else)
+# installing VeloView for lidar (usually for see data nothing else)
 
 
-#installing Zed2 Camera
-#https://www.stereolabs.com/docs/ros/
-#http://wiki.ros.org/zed-ros-wrapper
+# installing Zed2 Camera
+https://www.stereolabs.com/docs/ros/
+http://wiki.ros.org/zed-ros-wrapper
 
-#installing gtsam 4.0.0-alpha2
+# installing gtsam 4.0.0-alpha2 for lego loam Slam
+ ```
 wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
 cd ~/Downloads/ && unzip gtsam.zip -d ~/Downloads/
 cd ~/Downloads/gtsam-4.0.0-alpha2/
 mkdir build && cd build
 cmake ..
 sudo make install
+```
 
-#installing SLAM lego loam
-mkdir -p ~/lego_loam_ws/src
-cd ~/lego_loam_ws/src
+# installing lego loam SLAM
+
+```
+mkdir -p ~/Slam/lidar/lego_loam_ws/src
+cd ~/Slam/lidar/lego_loam_ws/src
 git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
 cd ..
 catkin_make -j1
+```
 
 #(install if lego is not running and MapOptimization Process dies.) 
-#sudo apt-get install libparmetis-dev 
-
+```
+sudo apt-get install libparmetis-dev 
+```
 
 #installing SLAM Floam 
 #installing SLAM Sc-lio 
