@@ -1,7 +1,7 @@
 # Husky_melodic_Desktop_installation
 Hi All, 
 
-## installing ROS melodic 
+## Installing ROS melodic 
 
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -26,7 +26,7 @@ sudo rosdep init
 rosdep update
 ```
 
-## installing Gazebo and rviz simulation
+## Installing Gazebo and rviz simulation
 ```
 sudo apt-get install ros-melodic-husky-simulator
 sudo apt-get install ros-melodic-husky-desktop
@@ -34,7 +34,7 @@ sudo apt-get install ros-melodic-husky-desktop
 
 # Application opens in different terminals.
 
-## installing Velodyne Lidar package,driver 
+## Installing Velodyne Lidar package,driver 
 
 ```
 sudo apt-get install ros-melodic-velodyne
@@ -43,14 +43,15 @@ rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 cd ~/velodyne_ws/ && catkin_make
 ```
 
-# installing VeloView for lidar (usually for see data nothing else)
+# Installing VeloView for lidar (usually for see data nothing else)
 
 
-# installing Zed2 Camera
+# Installing Zed2 Camera
 https://www.stereolabs.com/docs/ros/
+
 http://wiki.ros.org/zed-ros-wrapper
 
-# installing gtsam 4.0.0-alpha2 for lego loam Slam
+# Installing gtsam 4.0.0-alpha2 for lego loam Slam
  ```
 wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
 cd ~/Downloads/ && unzip gtsam.zip -d ~/Downloads/
@@ -60,7 +61,7 @@ cmake ..
 sudo make install
 ```
 
-# installing lego loam SLAM
+# Installing lego loam SLAM
 
 ```
 mkdir -p ~/Slam/lidar/lego_loam_ws/src
