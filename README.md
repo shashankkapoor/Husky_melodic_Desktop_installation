@@ -61,7 +61,7 @@ cmake ..
 sudo make install
 ```
 
-# Installing lego loam SLAM
+# Installing lego_loam_bor SLAM
 
 ```
 mkdir -p ~/Slam/lidar/lego_loam_ws/src
@@ -70,7 +70,7 @@ git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
 cd ..
 catkin_make -j1
 ```
-
+# Installing [koide3/lego_loam_bor](https://github.com/koide3/LeGO-LOAM-BOR)
 #(install if lego is not running and MapOptimization Process dies.) 
 ```
 sudo apt-get install libparmetis-dev 
